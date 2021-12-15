@@ -1,0 +1,22 @@
+.headerbackground{
+    background: black;
+    color: white;
+    border-color: black;
+}
+#socialBtn1{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    height: 70px;
+    background-color:#DB4437;
+   
+}  
+#socialLogin{
+    /* border-right: 2px solid black; */
+    margin-left: 30px;
+    vertical-align: super;
+}
+#icon{
+    font-size: 50px
+}
