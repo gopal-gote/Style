@@ -37,10 +37,11 @@ export class LoginComponent implements OnInit {
    
   }
   login(){
-    const payload={
-      username:''
-    }
-    this.userService.login(payload).subscribe(result=>{});
+    // const payload={
+    //   username:''
+    // }
+    // this.userService.login(payload).subscribe(result=>{});
+    this.route.navigate(["/dashboard"]);
   }
   social() {}
 }

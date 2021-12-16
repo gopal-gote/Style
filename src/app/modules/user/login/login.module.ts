@@ -3,17 +3,20 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login.component';
 import { RouterModule } from '@angular/router';
 import {LoginRoutingModule} from "./login-routing.module";
-// import {MatCardModule} from '@angular/material/card';
-// import {MatFormFieldModule} from '@angular/material/form-field';
-// import {MatIconModule} from '@angular/material/icon'
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { UserService } from 'src/app/core/services/user.service';
+import { RegisterComponent } from './components/register/register.component';
+import { ForgetPasswordComponent } from './components/forget-password/forget-password.component';
 
 
 
 @NgModule({
   declarations: [
-    LoginComponent
+    LoginComponent,
+    RegisterComponent,
+    ForgetPasswordComponent
   ],
   imports: [
     FormsModule,
@@ -21,10 +24,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CommonModule,
     RouterModule,
     LoginRoutingModule,
-    // MatCardModule,
-    // MatFormFieldModule,
-    // MatIconModule,
     NgxSpinnerModule,
-  ],exports:[LoginComponent]
+    HttpClientModule
+  ],
+  providers:[UserService],
+  exports:[LoginComponent]
 })
 export class LoginModule { }
