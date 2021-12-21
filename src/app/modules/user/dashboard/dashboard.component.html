@@ -1,1 +1,518 @@
-<p>dashboard works!</p>
+<!-- The Modal -->
+<div id="sortModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>Sort and Filter</h3>
+            <div class="d-flex align-items-center d-none d-sm-block">
+                <button class="btn br-20 me-3">Apply</button>
+                <a class="me-3" href="">Reset all</a>
+            </div>
+            <span class="close" onclick="closeSortModal()">&times;</span>
+        </div>
+        <div class="modal-body">
+            <div class="my-2">
+                <h5>Sort By...</h5>
+
+                <button class="btn br-20">Price</button>
+                <button class="btn br-20">Category</button>
+            </div>
+            <div class="my-4">
+                <h5>Filter By</h5>
+                <div>
+                    <label class="me-2"><input type="checkbox" class="me-2">Casual Shirts</label>
+                    <label class="me-2"><input type="checkbox" class="me-2">Casual T-Shirts</label>
+                    <label class="me-2"><input type="checkbox" class="me-2">Jeans</label>
+                    <label class="me-2"><input type="checkbox" class="me-2">Salwar Kurta</label>
+                    <label class="me-2"><input type="checkbox" class="me-2">Blazer</label>
+                    <label class="me-2"><input type="checkbox" class="me-2">Formal Pants</label>
+                    <label class="me-2"><input type="checkbox" class="me-2">Formal Shirts</label>
+                    <label class="me-2"><input type="checkbox" class="me-2">Semi-Formal Shirts</label>
+                    <label class="me-2"><input type="checkbox" class="me-2">Women's wear</label>
+                    <label class="me-2"><input type="checkbox" class="me-2">Kid's wear</label>
+                </div>
+
+            </div>
+        </div>
+        <div class="d-flex d-sm-none modal-footer">
+            <a class="me-3" href="">Reset all</a>
+            <button class="btn br-20 me-3">Apply</button>
+        </div>
+
+    </div>
+
+</div>
+<!--Cart popup  -->
+<!-- The Modal -->
+<div id="cartModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+        <div class="modal-header">
+            <h3>My Cart</h3>
+            <span class="close" onclick="closeCartModal()">&times;</span>
+        </div>
+        <div id="cartBody" class="modal-body">
+            <div class="table-container">
+                <div class="container">
+                    <div class="cart">
+                        <div class="my-2 cart-box">
+                            <div class="d-flex flex-wrap">
+                                <div class=""> <img src="themes/images/products/MS1.jpg" class="cart-img" />
+                                </div>
+                                <div class="product-cart">
+                                    <span class="title">
+                                        <h4
+                                            title="Catstewardesses Best Quality Tshirts with excellent stretch and elasticity">
+                                            Catstewardesses Best Quality Tshirts with excellent stretch and elasticity
+                                        </h4>
+                                    </span>
+                                    <div title="Branded with 100% cotton fabrics, provides excellent comfort. Wrinkle free. Laundry dry. Wash separately. Handle with care."
+                                        class="tier mb-2">Branded with 100% cotton fabrics, provides excellent comfort.
+                                        Wrinkle free</div>
+                                    <h5 class="price">$12.99</h5>
+                                    <!-- <button class="btn btn-canvas btn-xs remove" href="product/remove"><span class="uxicon uxicon-trash"></span>Remove</button> -->
+                                    <div class="number">
+                                        <span class="minus">-</span>
+                                        <input type="number" class="item-width" value="1" />
+                                        <span class="plus">+</span>
+                                    </div>
+                                    <div class="my-2">
+                                        <a class="me-2" href="#">Delete</a>
+                                        <a href="#">Save for later</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-2 cart-box">
+                            <div class="d-flex flex-wrap">
+                                <div class=""> <img src="themes/images/products/MS1.jpg" class="cart-img" />
+                                </div>
+                                <div class="product-cart">
+                                    <span class="title">
+                                        <h4>Catstewardesses</h4>
+                                    </span>
+                                    <div class="tier mb-2">Branded with 100% cotton fabrics, provides excellent comfort.
+                                        Wrinkle free</div>
+                                    <h5 class="price"> $12.99 </h5>
+                                    <!-- <button class="btn btn-canvas btn-xs remove" href="product/remove"><span class="uxicon uxicon-trash"></span>Remove</button> -->
+                                    <div class="number">
+                                        <span class="minus">-</span>
+                                        <input type="number" class="item-width" value="1" />
+                                        <span class="plus">+</span>
+                                    </div>
+                                    <div class="my-2">
+                                        <a class="me-2" href="#">Delete</a>
+                                        <a href="#">Save for later</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="my-2 cart-box">
+                            <div class="d-flex flex-wrap">
+                                <div class=""> <img src="themes/images/products/MS1.jpg" class="cart-img" />
+                                </div>
+                                <div class="product-cart">
+                                    <span class="title">
+                                        <h4>Catstewardesses</h4>
+                                    </span>
+                                    <div class="tier mb-2">Branded with 100% cotton fabrics, provides excellent comfort.
+                                        Wrinkle free</div>
+                                    <h5 class="price"> $12.99</h5>
+                                    <!-- <button class="btn btn-canvas btn-xs remove" href="product/remove"><span class="uxicon uxicon-trash"></span>Remove</button> -->
+                                    <div class="number">
+                                        <span class="minus">-</span>
+                                        <input type="number" class="item-width" value="1" />
+                                        <span class="plus">+</span>
+                                    </div>
+                                    <div class="my-2">
+                                        <a class="me-2" href="#">Delete</a>
+                                        <a href="#">Save for later</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <div class="complete">
+                <button type="button" class="btn m-2 br-20 btn-purchase">Proceed to checkout</button>
+                <button type="button" class="btn m-2 br-20 btn-purchase">Back to shopping</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Sidebar -->
+<div class="sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+    <button onclick="sidebar_close()" class="sidebar-close">&times;</button>
+    <li href="#" class="w3-bar-item w3-button">My Orders</li>
+    <li href="#" class="w3-bar-item w3-button">About us</li>
+    <li href="#" class="w3-bar-item w3-button">Contact us</li>
+    <li href="#" class="w3-bar-item w3-button d-block d-sm-none">My Profile</li>
+    <li href="#" class="w3-bar-item w3-button d-block d-sm-none">Logout</li>
+</div>
+<div id="header" class="fixedposition">
+    <div class="container-fluid">
+        <div class="col-lg-12">
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="col-lg-3">
+                    <img class="hamburger" onclick="sidebar_open()" src="./themes/images/hamburger.png">
+                    <a class="brand" style="margin-left:15px;" href="index.html"><img class="header-img"
+                            src="themes/images/logo3.png" alt="Bootsshop" /></a>
+                </div>
+                <div class="col-lg-3 offset-lg-6">
+                    <div class="right_header_info text-end">
+                        <ul>
+                            <li><img class="imglogo" style="margin-right:15px;" src="./themes/images/wishlist.png"
+                                    alt="website template image"></li>
+                            <li><img id="cartBtnModal" class="imglogo" onclick="openCartModal()"
+                                    style="margin-right:15px;" src="./themes/images/shopping-cart.png"
+                                    alt="website template image"></li>
+                            <li class="d-none d-sm-block header-popover"><img class="imglogo show" data-toggle="popover"
+                                    data-placement="bottom" style="margin-right:15px;" src="./themes/images/user12.png"
+                                    alt="website template image"></li>
+                            <div id="popover-content" class="hide">
+                                <div class="px-2 py-2">My Profile</div>
+                                <!-- <hr> -->
+                                <div class="px-2 py-2 top-border" style="">Logout</div>
+                            </div>
+                            <!-- <li>
+				<button type="button" id="sidebarCollapse"><img src="assets/images/menu_icon.png" alt="website template image"></button>
+			  </li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Header End====================================================================== -->
+<div id="carouselBlk">
+    <div id="myCarousel" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="container">
+                    <a href="#"><img style="width:100%" src="themes/images/carousel/8.png" alt="special offers" /></a>
+                    <div class="carousel-caption">
+                        <h4>Second Thumbnail label</h4>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                            gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="container">
+                    <a href="#"><img style="width:100%" src="themes/images/carousel/9.jpg" alt="" /></a>
+                    <div class="carousel-caption">
+                        <h4>Second Thumbnail label</h4>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                            gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="container">
+                    <a href="#"><img src="themes/images/carousel/10.jpg" alt="" /></a>
+                    <div class="carousel-caption">
+                        <h4>Second Thumbnail label</h4>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                            gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</div>
+        <div class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</div>
+    </div>
+</div>
+<div id="mainBody">
+    <div class="container">
+        <div class="row">
+            <div class="span9">
+                <div class="well well-small">
+                    <h4>Categories</h4>
+                    <div class="d-flex flex-row overflow-auto d-flex d-sm-flex d-md-none">
+                        <div class="resp-category">
+                            <img class="resp-img" src="themes/images/products/MS1.jpg" alt="">
+                            <div class="ellipsis" title="T-shirts">T-shirts</div>
+                        </div>
+                        <div class="resp-category">
+                            <img class="resp-img" src="themes/images/products/MS2.jpg" alt="">
+                            <div class="ellipsis" title="Jeans">Jeans</div>
+                        </div>
+                        <div class="resp-category">
+                            <img class="resp-img" src="themes/images/products/MS3.jpg" alt="">
+                            <div class="ellipsis" title="Formal shirts">Formal shirts</div>
+                        </div>
+                        <div class="resp-category">
+                            <img class="resp-img" src="themes/images/products/MS1.jpg" alt="">
+                            <div class="ellipsis" title="Salwar kurta">Salwar kurta</div>
+                        </div>
+                        <div class="resp-category">
+                            <img class="resp-img" src="themes/images/products/MS2.jpg" alt="">
+                            <div class="ellipsis" title="Blazers">Blazers</div>
+                        </div>
+                        <div class="resp-category">
+                            <img class="resp-img" src="themes/images/products/MS3.jpg" alt="">
+                            <div class="ellipsis" title="Casual wear">Casual wear</div>
+                        </div>
+                    </div>
+                    <div class="flex-row overflow-auto d-none d-sm-none d-md-block">
+                        <div id="featured-category" class="carousel slide py-3">
+                            <div class="carousel-inner">
+                                <div class="item active">
+                                    <ul id="sideManu" class="nav nav-tabs nav-stacked justify-content-center">
+                                        <li class="span3">
+
+                                            <div class="thumbnail">
+
+                                                <a href="#"><img src="themes/images/products/MS1.jpg" alt=""></a>
+                                                <div class="caption">
+                                                    <h5>Men's T-shirts</h5>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="span3">
+                                            <div class="thumbnail">
+                                                <a href="#"><img src="themes/images/products/MS4.jpg" alt=""></a>
+                                                <div class="caption">
+                                                    <h5>Jeans</h5>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="span3">
+                                            <div class="thumbnail">
+                                                <a href="#"><img src="themes/images/products/MS2.jpg" alt=""></a>
+                                                <div class="caption">
+                                                    <h5>Men's Formal Shirts</h5>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="span3">
+                                            <div class="thumbnail">
+                                                <a href="#"><img src="themes/images/products/MS3.jpg" alt=""></a>
+                                                <div class="caption">
+                                                    <h5>Men's Salwar Kurta</h5>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <ul id="sideManu" class="nav nav-tabs nav-stacked justify-content-center">
+                                        <li class="span3">
+
+                                            <div class="thumbnail">
+
+                                                <a href="#"><img src="themes/images/products/MS1.jpg" alt=""></a>
+                                                <div class="caption">
+                                                    <h5>Men's T-shirts</h5>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="span3">
+                                            <div class="thumbnail">
+                                                <a href="#"><img src="themes/images/products/MS4.jpg" alt=""></a>
+                                                <div class="caption">
+                                                    <h5>Jeans</h5>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="span3">
+                                            <div class="thumbnail">
+                                                <a href="#"><img src="themes/images/products/MS2.jpg" alt=""></a>
+                                                <div class="caption">
+                                                    <h5>Men's Formal Shirts</h5>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="span3">
+                                            <div class="thumbnail">
+                                                <a href="#"><img src="themes/images/products/MS3.jpg" alt=""></a>
+                                                <div class="caption">
+                                                    <h5>Men's Salwar Kurta</h5>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="item">
+                                    <ul id="sideManu" class="nav nav-tabs nav-stacked justify-content-center">
+                                        <li class="span3">
+
+                                            <div class="thumbnail">
+
+                                                <a href="#"><img src="themes/images/products/MS1.jpg" alt=""></a>
+                                                <div class="caption">
+                                                    <h5>Men's T-shirts</h5>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="span3">
+                                            <div class="thumbnail">
+                                                <a href="#"><img src="themes/images/products/MS4.jpg" alt=""></a>
+                                                <div class="caption">
+                                                    <h5>Jeans</h5>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="span3">
+                                            <div class="thumbnail">
+                                                <a href="#"><img src="themes/images/products/MS2.jpg" alt=""></a>
+                                                <div class="caption">
+                                                    <h5>Men's Formal Shirts</h5>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="span3">
+                                            <div class="thumbnail">
+                                                <a href="#"><img src="themes/images/products/MS3.jpg" alt=""></a>
+                                                <div class="caption">
+                                                    <h5>Men's Salwar Kurta</h5>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="left carousel-control d-none d-sm-block" href="#featured-category"
+                                data-slide="prev">‹</div>
+                            <div class="right carousel-control d-none d-sm-block" href="#featured-category"
+                                data-slide="next">›</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="well">
+                    <div id="productBar">
+                        <div class="col-lg-12 col-12 d-flex latest-products justify-content-between">
+                            <div class="col-6">
+                                <h4>Browse Products </h4>
+                            </div>
+                            <div class="images">
+                                <img class="myBtnModal" id="myBtn" src="./themes/images/sort.png"
+                                    onclick="openSortModal()">
+                                <img class="myBtnModal" src="./themes/images/filter.png" onclick="openSortModal()">
+                            </div>
+                        </div>
+                        <div class="d-flex mb-3">
+                            <input type="text" class="search-product form-control"
+                                placeholder="Search products by name....">
+                            <button class="btn-search"><img src="./themes/images/search2.png"></button>
+                        </div>
+                    </div>
+                    <ul class="thumbnails">
+                        <li class="span3-product">
+                            <div class="thumbnail">
+                                <img class="products-img" src="./themes/images/product-wish.png"
+                                    alt="website template image">
+                                <a href="#"><img src="themes/images/products/MP1.jpg" alt="" /></a>
+                                <div class="caption">
+                                    <h5 title="Product name" class="ellipsis">Product name</h5>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text. Lorem Ipsum is simply dummy text. Lorem Ipsum
+                                        is simply dummy text. Lorem Ipsum is simply dummy text. Lorem Ipsum is simply
+                                        dummy text. Lorem Ipsum is simply dummy text. Lorem Ipsum is simply dummy text.
+                                    </p>
+                                    <div class="text-center">
+                                        <!-- <a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  -->
+                                        <h5>$222.00</h5>
+                                    </div>
+                                    <div class="mt-2 text-center">
+                                        <button class="btn" href="#">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="span3-product">
+                            <div class="thumbnail">
+                                <img class="products-img" src="./themes/images/product-wish.png"
+                                    alt="website template image">
+                                <a href="#"><img src="themes/images/products/MP2.jpg" alt="" /></a>
+                                <div class="caption">
+                                    <h5 class="ellipsis">Product name</h5>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text.
+                                    </p>
+                                    <div class="text-center">
+                                        <!-- <a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  -->
+                                        <h5>$222.00</h5>
+                                    </div>
+                                    <div class="mt-2 text-center">
+                                        <button class="btn" href="#">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="span3-product">
+                            <div class="thumbnail">
+                                <img class="products-img" src="./themes/images/product-wish.png"
+                                    alt="website template image">
+                                <a href="#"><img src="themes/images/products/MS3.jpg" alt="" /></a>
+                                <div class="caption">
+                                    <h5>Product name</h5>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text.
+                                    </p>
+                                    <div class="text-center">
+                                        <!-- <a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  -->
+                                        <h5 class="ellipsis">$222.00</h5>
+                                    </div>
+                                    <div class="mt-2 text-center">
+                                        <button class="btn" href="#">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="span3-product">
+                            <div class="thumbnail">
+                                <img class="products-img" src="./themes/images/product-wish.png"
+                                    alt="website template image">
+                                <a href="#"><img src="themes/images/products/MP4.jpg" alt="" /></a>
+                                <div class="caption">
+                                    <h5>Product name</h5>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text.
+                                    </p>
+                                    <div class="text-center">
+                                        <!-- <a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  -->
+                                        <h5 class="ellipsis">$222.00</h5>
+                                    </div>
+                                    <div class="mt-2 text-center">
+                                        <button class="btn" href="#">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="span3-product">
+                            <div class="thumbnail">
+                                <img class="products-img" src="./themes/images/product-wish.png"
+                                    alt="website template image">
+                                <a href="#"><img src="themes/images/products/MP3.jpg" alt="" /></a>
+                                <div class="caption">
+                                    <h5>Product name</h5>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text.
+                                    </p>
+                                    <div class="text-center">
+                                        <!-- <a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>  -->
+                                        <h5 class="ellipsis">$222.00</h5>
+                                    </div>
+                                    <div class="mt-2 text-center">
+                                        <button class="btn" href="#">Add to Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
